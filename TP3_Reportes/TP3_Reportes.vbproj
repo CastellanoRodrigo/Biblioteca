@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADC90EC8-A110-44F4-8305-5A7415FD248B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TP3_Reportes.My.MyApplication</StartupObject>
+    <RootNamespace>TP3_Reportes</RootNamespace>
+    <AssemblyName>TP3_Reportes</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TP3_Reportes.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TP3_Reportes.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatosGlobales.vb" />
+    <Compile Include="FrmAcercaDe.Designer.vb">
+      <DependentUpon>FrmAcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarAutor.Designer.vb">
+      <DependentUpon>FrmAgregarAutor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarAutor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarIdioma.Designer.vb">
+      <DependentUpon>FrmAgregarIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarLibro.Designer.vb">
+      <DependentUpon>FrmAgregarLibro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarLibro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarPais.Designer.vb">
+      <DependentUpon>FrmAgregarPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaAutor.Designer.vb">
+      <DependentUpon>frmConsultaAutor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaAutor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaIdioma.Designer.vb">
+      <DependentUpon>frmConsultaIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaPais.Designer.vb">
+      <DependentUpon>frmConsultaPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadisticasLPorA.Designer.vb">
+      <DependentUpon>FrmEstadisticasLPorA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadisticasLPorA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadisticasLPorI.Designer.vb">
+      <DependentUpon>FrmEstadisticasLPorI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadisticasLPorI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadisticasLPorP.Designer.vb">
+      <DependentUpon>FrmEstadisticasLPorP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadisticasLPorP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibreria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibreria.Designer.vb">
+      <DependentUpon>frmLibreria.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListasLibros.Designer.vb">
+      <DependentUpon>FrmListasLibros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListasLibros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListasAutor.Designer.vb">
+      <DependentUpon>FrmListasAutor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListasAutor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListasIdioma.Designer.vb">
+      <DependentUpon>FrmListasIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListasIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListasPais.Designer.vb">
+      <DependentUpon>FrmListasPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListasPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarAutor.Designer.vb">
+      <DependentUpon>FrmModificarAutor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarAutor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarIdioma.Designer.vb">
+      <DependentUpon>FrmModificarIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarLibro.Designer.vb">
+      <DependentUpon>FrmModificarLibro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarLibro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarPais.Designer.vb">
+      <DependentUpon>FrmModificarPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAcercaDe.resx">
+      <DependentUpon>FrmAcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarAutor.resx">
+      <DependentUpon>FrmAgregarAutor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarIdioma.resx">
+      <DependentUpon>FrmAgregarIdioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarLibro.resx">
+      <DependentUpon>FrmAgregarLibro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarPais.resx">
+      <DependentUpon>FrmAgregarPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaAutor.resx">
+      <DependentUpon>frmConsultaAutor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaIdioma.resx">
+      <DependentUpon>frmConsultaIdioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPais.resx">
+      <DependentUpon>frmConsultaPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadisticasLPorA.resx">
+      <DependentUpon>FrmEstadisticasLPorA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadisticasLPorI.resx">
+      <DependentUpon>FrmEstadisticasLPorI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadisticasLPorP.resx">
+      <DependentUpon>FrmEstadisticasLPorP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLibreria.resx">
+      <DependentUpon>frmLibreria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListasAutor.resx">
+      <DependentUpon>FrmListasAutor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListasIdioma.resx">
+      <DependentUpon>FrmListasIdioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListasLibros.resx">
+      <DependentUpon>FrmListasLibros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListasPais.resx">
+      <DependentUpon>FrmListasPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarAutor.resx">
+      <DependentUpon>FrmModificarAutor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarIdioma.resx">
+      <DependentUpon>FrmModificarIdioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarLibro.resx">
+      <DependentUpon>FrmModificarLibro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarPais.resx">
+      <DependentUpon>FrmModificarPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Libreria.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
